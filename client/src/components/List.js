@@ -25,7 +25,7 @@ function List() {
         Transactions = data.map((v, i) => <Transaction key={i} category={v} handler={handlerClick}></Transaction>)
     }
     else if (isError) {
-        Transactions = <div>Error!!!</div>
+        Transactions = <div>There is Error!!!</div>
     }
 
     return (
