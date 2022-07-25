@@ -1,17 +1,17 @@
 const routes = require('express').Router();
 const controller = require('../controller/controller')
 
-routes.route('/api/categories')
+routes.route('/categories')
     .post(controller.createCategories)
     .get(controller.getCategories)
 
-routes.route('/api/transaction')
+routes.route('/transaction')
     .post(controller.createTransaction)
     .get(controller.getTransaction)
     .delete(controller.deleteTransaction)
 
 
-routes.route('/api/labels')
+routes.route('/labels')
     .get(controller.getLabels)
 
 
