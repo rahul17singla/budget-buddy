@@ -5,7 +5,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 const BaseURI = 'http://localhost:5000'
 
 export const apiSlice = createApi({
-    baseQuery: fetchBaseQuery({ baseUrl: process.env.BaseURI || BaseURI }),
+    baseQuery: fetchBaseQuery({ baseUrl: BaseURI }),
     endpoints: builder => ({
         getCategories: builder.query({
             query: () => '/api/categories',
