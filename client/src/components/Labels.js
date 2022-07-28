@@ -18,7 +18,7 @@ function Labels() {
         Transactions = d.map((v, i) => <LabelComponent key={i} data={v}></LabelComponent>)
     }
     else if (isError) {
-        Transactions = <div>Error!!!</div>
+        Transactions = <div>Some Error!!!</div>
     }
 
     return (
